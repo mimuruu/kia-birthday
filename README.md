@@ -20,6 +20,14 @@ npm run preview
 
 Hasil build ada di `dist/`, siap di-deploy ke hosting static (Vercel, Netlify, GitHub Pages). Untuk GitHub Pages, tambahkan `base` di `vite.config.ts` sesuai nama repo.
 
+## Deploy ke GitHub Pages
+
+Sudah aktif di https://mimuruu.github.io/kia-birthday/ (branch `gh-pages`). Update konten:
+
+```bash
+npm run build && npx gh-pages -d dist
+```
+
 ## Cara kerja halaman
 
 - **Cover pembuka** dengan tombol **Buka Kado**. Musik dicoba diputar otomatis saat halaman dibuka; kalau browser memblokir autoplay, musik mulai otomatis pada interaksi pertama (termasuk tombol Buka Kado).
