@@ -1,3 +1,5 @@
+const base = import.meta.env.BASE_URL
+
 export const recipient = {
   name: "Saskia",
   nickname: "Kiya",
@@ -81,11 +83,11 @@ export const gallery = {
   heading: "A few memories to keep",
   lead: "Geser atau ketuk buat lihat lebih deket.",
   photos: [
-    { src: "/images/kiya-photo-01.jpg", alt: "Foto kenangan kita nomor satu" },
-    { src: "/images/kiya-photo-02.jpg", alt: "Foto kenangan kita nomor dua" },
-    { src: "/images/kiya-photo-03.jpg", alt: "Foto kenangan kita nomor tiga" },
-    { src: "/images/kiya-photo-04.jpg", alt: "Foto kenangan kita nomor empat" },
-    { src: "/images/kiya-photo-05.jpg", alt: "Foto kenangan kita nomor lima" },
+    { src: `${base}images/kiya-photo-01.jpg`, alt: "Foto kenangan kita nomor satu" },
+    { src: `${base}images/kiya-photo-02.jpg`, alt: "Foto kenangan kita nomor dua" },
+    { src: `${base}images/kiya-photo-03.jpg`, alt: "Foto kenangan kita nomor tiga" },
+    { src: `${base}images/kiya-photo-04.jpg`, alt: "Foto kenangan kita nomor empat" },
+    { src: `${base}images/kiya-photo-05.jpg`, alt: "Foto kenangan kita nomor lima" },
   ],
 }
 
@@ -113,7 +115,7 @@ export const closing = {
 }
 
 export const music = {
-  src: "/audio/mari-bercerita.mp3",
+  src: `${base}audio/mari-bercerita.mp3`,
   title: "Mari Bercerita",
   volume: 0.3,
 }

@@ -11,7 +11,7 @@ export function ClosingSection({ onBackToStart }: ClosingSectionProps) {
   return (
     <section className="section closing" aria-labelledby="closing-title">
       <img
-        src="/images/rapunzel-flower.png"
+        src={`${import.meta.env.BASE_URL}images/rapunzel-flower.png`}
         alt=""
         aria-hidden="true"
         className="closing-flower"
