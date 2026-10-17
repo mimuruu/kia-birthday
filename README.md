@@ -22,7 +22,7 @@ Hasil build ada di `dist/`, siap di-deploy ke hosting static (Vercel, Netlify, G
 
 ## Deploy ke GitHub Pages
 
-Sudah aktif di https://mimuruu.github.io/kia-birthday/ (branch `gh-pages`). Update konten:
+Set `base: '/<nama-repo>/'` di `vite.config.ts`, lalu:
 
 ```bash
 npm run build && npx gh-pages -d dist
